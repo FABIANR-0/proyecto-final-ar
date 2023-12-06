@@ -1,0 +1,27 @@
+<i (click)="closeModal()" class="bi bi-x-square fs-3 text-danger float-end"></i>
+<h1>Actualizar Producto</h1>
+  <form [formGroup]="editForm" (ngSubmit)="edit()" id="updateProductForm">
+    <div class="form-group">
+      <label for="productName">Nombre del Producto:</label>
+      <input  formControlName="title" type="text" id="productName" name="productName" required>
+    </div>
+    <div class="form-group">
+      <label for="productPrice">Precio:</label>
+      <input  formControlName="price" type="number" id="productPrice" name="productPrice" step="0.01" required>
+    </div>
+    <div class="form-group">
+      <label for="productStock">Stock:</label>
+      <input  formControlName="stock" type="number" id="productStock" name="productStock" step="0.01" required>
+    </div>
+    <div class="form-group">
+      <label for="Description">Descripcion del producto:</label>
+      <textarea  formControlName="description" id="productDescription" name="productDescription" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="image">URL Imagen:</label>
+      <textarea  formControlName="image" id="productDescription" name="productDescription" required></textarea>
+    </div>
+    <div class="butt">
+      <button class="btn btn-warning" > editar </button>
+    </div>
+  </form>

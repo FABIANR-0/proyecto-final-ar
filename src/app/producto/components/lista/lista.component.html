@@ -1,0 +1,32 @@
+<!--div>
+
+    <ng-content select="[titulo]"></ng-content>
+    <ng-content select="[precio]"></ng-content>
+    <ng-content select="[img]" ></ng-content>
+    <ng-content select="[descripcion]"></ng-content>
+
+</div-->
+
+<div class="content-card-product">
+  <div class="content-like-icon-and-img" >
+    <div (click)="ver(productData['id'])" class="img-padding" >
+      <img [src]="productData['url_image']" alt="logo">
+    </div>
+  </div>
+  <div class="content-card-body">
+    <div class="title-card">
+      <span >{{productData['name']}}</span>
+    </div>
+    <div class="content-price-discount">
+      <div class="content-price">
+        <span class="price" >Precio:</span>
+        <span class="price-new">${{productData['price'] }}</span>
+      </div>
+      <div class="icons">
+       <i  (click)="edit(productData['id'])" class="bi bi-pencil-square up"></i>
+        <i (click)="delete(productData['id'])" class="bi bi-trash-fill del"></i>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,32 @@
+#modal {
+  .modal-header {
+    background-color: #EAECEE    !important;
+    text-align: center;
+    padding: 0.4cm;
+  }
+
+  .modal-con {
+    background-color: #f8f9fa;
+    color: black;
+    display: flex;
+
+    .img {
+      margin: 0.35cm;
+      img{
+        width: 200px;
+        height: 200px;
+        border-radius: 0.25rem;
+      }
+    }
+
+    p, h4 {
+      text-align: left;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    h5{
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.content-card-product {
+  width: 270px;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 15px 15px -3px rgba(0, 0, 0, 0.1), 0px 15px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  gap: 12px;
+
+  .content-like-icon-and-img {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    background-color: grey;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+
+    .img-padding {
+      padding: 10px;
+      width: 100%;
+      min-height: 220px;
+      height: 220px;
+      background-color: #ffffff;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 4px;
+      }
+    }
+
+  }
+
+  .content-card-body {
+    width: 100%;
+    height: 25%;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .title-card {
+      width: 100%;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+
+
+      span {
+        white-space: initial;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+        text-align: left;
+        line-height: 1.2;
+      }
+    }
+
+    .content-price-discount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 90%;
+
+      .content-price {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .price {
+          height: 10px;
+          font-size: 12px;
+          color: gray;
+        }
+
+        .price-new {
+          font-size: 18px;
+          color: rgb(59, 34, 28);
+          font-weight: 500;
+        }
+      }
+
+      .content-discount {
+        padding: 8px;
+        border-radius: 4px;
+        background-color: theme-palette-color('grays', 25);
+        font-size: 12px;
+        color: #3BC279;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.icons{
+  font-size: 1.3rem;
+  align-self: self-end;
+  display: flex;
+}
+
+.icons i {
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+.del{
+  color: rgb(184, 50, 50);
+}
+.up{
+  color: rgb(177, 177, 32);
+}

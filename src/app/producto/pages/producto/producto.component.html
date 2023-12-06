@@ -1,0 +1,27 @@
+
+<!--div ngClass="grid">
+
+    <ng-container *ngIf="elementos.length > 0 ; else vacio" >
+        <app-lista *ngFor="let p of elementos">
+            <div titulo>{{ p.title }}</div>
+            <div descripcion>{{ p.description }}</div>
+            <div precio>{{ p.price }}</div>
+            <div img><img [ngSrc]="p.images[0]" width="500" height="500"  /> </div>
+        </app-lista>
+    </ng-container>
+
+    <ng-template #vacio>esta vacio</ng-template>
+</div-->
+<div class="add float-end">
+  <button (click)="save()" class="btn btn-success"> Agregar <i class="bi bi-patch-plus"></i></button>
+</div>
+<div *ngIf="elementos[0]" class="container-products">
+  <app-lista
+    *ngFor="let p of elementos"
+    [productData]="p">
+  </app-lista>
+</div>
+<div *ngIf="!elementos[0]" class="container-products">
+  <img width="500px" height="500px" src="https://img.freepik.com/vector-gratis/sacar-productos-cesta-negarse-comprar-cambiar-decision-eliminacion-elementos-vaciado-papelera-aplicacion-compras-linea-personaje-dibujos-animados-usuario-computadora-portatil-ilustracion-metafora-concepto-aislado-vector_335657-2843.jpg?w=740&t=st=1701806582~exp=1701807182~hmac=da714961417af3de93fe4d155d2229850fb052b211abeaeafb3efdf654da357c" alt="">
+  <h3>Aun no ha agregado productos</h3>
+</div>
