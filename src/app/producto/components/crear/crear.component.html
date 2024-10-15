@@ -1,8 +1,8 @@
 <i (click)="closeModal()" class="bi bi-x-square fs-3 text-danger float-end"></i>
-<h1>Agregar Producto</h1>
+<h1>Agregar Libro</h1>
   <form [formGroup]="saveForm" (ngSubmit)="save()" id="updateProductForm">
     <div class="form-group">
-      <label for="productName">Nombre del Producto:</label>
+      <label for="productName">Nombre del libro:</label>
       <input  formControlName="name" type="text" id="productName" name="productName" required>
     </div>
     <div class="form-group">

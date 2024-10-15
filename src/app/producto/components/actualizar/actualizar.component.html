@@ -1,8 +1,8 @@
 <i (click)="closeModal()" class="bi bi-x-square fs-3 text-danger float-end"></i>
-<h1>Actualizar Producto</h1>
+<h1>Actualizar Libro</h1>
   <form [formGroup]="editForm" (ngSubmit)="edit()" id="updateProductForm">
     <div class="form-group">
-      <label for="productName">Nombre del Producto:</label>
+      <label for="productName">Nombre del libro:</label>
       <input  formControlName="title" type="text" id="productName" name="productName" required>
     </div>
     <div class="form-group">
@@ -14,7 +14,7 @@
       <input  formControlName="stock" type="number" id="productStock" name="productStock" step="0.01" required>
     </div>
     <div class="form-group">
-      <label for="Description">Descripcion del producto:</label>
+      <label for="Description">Descripcion del libro:</label>
       <textarea  formControlName="description" id="productDescription" name="productDescription" required></textarea>
     </div>
     <div class="form-group">

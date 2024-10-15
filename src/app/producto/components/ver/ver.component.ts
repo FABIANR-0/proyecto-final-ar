@@ -29,7 +29,7 @@ export class VerComponent {
     this.id = this.data.id;
     this.service.getOne(this.id).subscribe(
       (res :any)=>{
-       this.product = res.data[0];
+       this.product = res.data;
        }
     )
   }

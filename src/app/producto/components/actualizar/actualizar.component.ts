@@ -44,11 +44,11 @@ export class ActualizarComponent {
    this.service.getOne(id).subscribe(
      (res :any)=>{
       this.editForm.patchValue({
-        title: res.data[0].name,
-        description: res.data[0].description,
-        stock: res.data[0].stock,
-        price: res.data[0].price,
-        image: res.data[0].url_image
+        title: res.data.name,
+        description: res.data.description,
+        stock: res.data.stock,
+        price: res.data.price,
+        image: res.data.url_image
       });
       }
    )
