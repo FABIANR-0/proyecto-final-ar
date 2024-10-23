@@ -1,7 +1,7 @@
 export interface ProductoInterface {
     id: string
     name : string ,
-    price: number,
+    autor: string,
     stock:number,
     url_image : string,
     description : string,

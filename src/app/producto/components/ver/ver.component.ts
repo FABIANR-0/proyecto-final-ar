@@ -14,7 +14,7 @@ export class VerComponent {
   product: ProductoInterface = {
     id: '',
     name: '',
-    price: 0,
+    autor: '',
     stock: 0,
     url_image: '',
     description: ''

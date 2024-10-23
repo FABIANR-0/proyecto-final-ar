@@ -47,7 +47,7 @@ export class ActualizarComponent {
         title: res.data.name,
         description: res.data.description,
         stock: res.data.stock,
-        price: res.data.price,
+        price: res.data.autor,
         image: res.data.url_image
       });
       }
